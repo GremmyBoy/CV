@@ -85,21 +85,51 @@ body {
 }
 
 .slider__wrapper {
-    width: 100%;
-    max-width: 1440px;
+    position: relative;
+    max-width: 80%;
     margin: auto;
+    margin-top: 28px;
+    overflow: hidden;
 }
 
 .silder__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 28px;
+    transition: all 0.7s ease;
 }
 
-.slider__photo {
-    width: 80%;
+.slider__photo {}
+
+.arrow__back {
+    position: absolute;
+    bottom: 47%;
+    left: 4%;
+    border-radius: 50%;
+    background: rgb(237, 233, 227);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+.arrow__back:hover {
+    background: green;
+}
+
+.arrow__forward {
+    position: absolute;
+    bottom: 47%;
+    left: 90%;
+    border-radius: 50%;
+    background: rgb(237, 233, 227);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.arrow__forward:hover {
+    background: green;
+}
+
+
 
 /* Styles for ABOUT-ME */
 
