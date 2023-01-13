@@ -13,6 +13,7 @@ const init = () => {
     slider.style.width = width * sliderImg.length + 'px';
     sliderImg.forEach((item) => {
         item.style.width = width + 'px';
+        item.style.height = 'auto';
     })
     rollSLider();
 }
