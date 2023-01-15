@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Inter:wght@500;700&family=Montserrat:ital,wght@0,500;0,600;0,800;1,400&display=swap');
+
 /* Basic Styles*/
 
 body {
@@ -26,7 +27,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: #F5EFD7;
-    padding: 51px;
+    padding: 23px 50px;
 }
 
 .main__title h1 {
@@ -58,6 +59,26 @@ footer {
     color: green;
 }
 
+@media (max-width: 1200px) {
+    .main__title h1 {
+        font-size: 45px;
+        line-height: 35px;
+    }
+
+    .navigation {
+        gap: 30px;
+    }
+
+    .navigation__item a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        transition: all 0.3s ease;
+    }
+}
+
 /* Styles for NAME INFORMATION */
 
 .name__wrapper {
@@ -72,16 +93,16 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-top: 84px;
+    color: #1C293D;
 }
 
 .name__title h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 72px;
     line-height: 50px;
     letter-spacing: 0.06em;
-    color: #1C293D;
 }
 
 .name__title h3 {
@@ -91,7 +112,6 @@ footer {
     font-size: 50px;
     line-height: 35px;
     letter-spacing: 0.05em;
-    color: #1C293D;
     margin-top: 20px;
 }
 
@@ -141,6 +161,21 @@ footer {
 }
 
 
+@media (max-width: 1200px) {
+    .name__wrapper {
+        max-width: 1200px;
+    }
+
+    .name__title h2 {
+        font-size: 63px;
+    }
+
+    .name__title h3 {
+        font-size: 43px;
+    }
+}
+
+
 
 /* Styles for ABOUT-ME */
 
@@ -163,8 +198,9 @@ footer {
     align-items: center;
     justify-content: center;
     color: #F5EFD7;
-    padding: 44px 96px 96px 111px;
-    width: 70%;
+    /* padding: 44px 96px 96px 111px; */
+    padding: 20px 50px 57px 50px;
+    width: 80%;
     background: #1C293D;
     border-radius: 10px;
 }
@@ -173,7 +209,7 @@ footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 40px;
 }
 
@@ -181,18 +217,33 @@ footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 45px;
+    line-height: 40px;
     text-align: center;
     letter-spacing: 0.05em;
 }
 
 .about-me__block p:nth-child(2) {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .about-me__block p:nth-child(3) {
     margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .about-me__wrapper {
+        max-width: 1200px;
+    }
+
+    .about-me__block h2 {
+        font-size: 50px;
+    }
+
+    .about-me__block p {
+        font-size: 33px;
+    }
+
 }
 
 /* Styles for SKILLS */
@@ -215,14 +266,14 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
 }
 
 .skills__block h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 40px;
     color: #1C293D;
 }
@@ -231,7 +282,7 @@ footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 45px;
     line-height: 35px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -248,7 +299,22 @@ footer {
 }
 
 .skills__item img {
-    width: 70%;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .skills__wrapper {
+        max-width: 1200px;
+    }
+
+    .skills__block h2 {
+        font-size: 50px;
+    }
+
+    .skills__block p {
+        font-size: 37px;
+    }
+
 }
 
 /* Styles for education */
@@ -343,6 +409,32 @@ footer {
     border-top: 1px solid rgba(28, 41, 61, 0.3);
 }
 
+@media (max-width: 1200px) {
+
+    .education__wrapper {
+        max-width: 1200px;
+    }
+
+    .education__title h2 {
+        font-size: 50px;
+    }
+
+    .education__info p {
+        font-size: 37px;
+    }
+
+    .education__info span {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .new_info {
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+}
+
 /* Styles for LANGUAGES */
 
 .languages__wrapper {
@@ -403,6 +495,27 @@ footer {
     margin-top: 20px;
 }
 
+@media (max-width: 1200px) {
+
+    .languages__wrapper {
+        max-width: 1200px;
+    }
+
+    .languages__block h2 {
+        font-size: 50px;
+    }
+
+    .languages__items p {
+        font-size: 37px;
+    }
+
+    .languages__items p:nth-child(2) {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+}
+
 /* Styles for position */
 
 .position__wrapper {
@@ -419,7 +532,7 @@ footer {
     flex-direction: column;
 }
 
-.position__name {
+.position__title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,7 +542,7 @@ footer {
     border-bottom: 1px solid rgba(28, 41, 61, 0.5);
 }
 
-.position__name h2 {
+.position__title h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -437,7 +550,7 @@ footer {
     line-height: 40px;
 }
 
-.position__name p {
+.position__title p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -472,6 +585,42 @@ footer {
     margin-top: 15px;
 }
 
+@media (max-width: 1200px) {
+
+    .position__wrapper {
+        max-width: 1200px;
+    }
+
+    .position__title {
+        padding-bottom: 11px;
+    }
+
+    .position__title h2 {
+        font-size: 50px;
+    }
+
+    .position__title p {
+        font-size: 37px;
+        margin-top: 7px;
+    }
+
+    .position__blocks {
+        margin-top: 26px;
+    }
+
+    .position__blocks p:nth-child(1) {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .position__blocks p:nth-child(2) {
+        font-size: 25px;
+        line-height: 20px;
+        margin-top: 7px;
+    }
+
+}
+
 /* Styles for footer */
 
 .footer__wrapper {
@@ -496,18 +645,11 @@ footer {
     width: 100%;
 }
 
-.footer__items .footer__item:nth-child(2) {
+.footer__item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #F5EFD7;
 }
 
 .footer__item a {
