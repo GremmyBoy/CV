@@ -70,12 +70,19 @@ footer {
     }
 
     .navigation__item a {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
         font-size: 15px;
         line-height: 25px;
-        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .header__container {
+        padding: 23px 23px;
+    }
+
+    .navigation {
+        gap: 15px;
     }
 }
 
@@ -149,7 +156,7 @@ footer {
 .arrow__forward {
     position: absolute;
     bottom: 47%;
-    left: 90%;
+    left: 92%;
     border-radius: 50%;
     background: rgb(237, 233, 227);
     transition: all 0.3s ease;
@@ -162,6 +169,7 @@ footer {
 
 
 @media (max-width: 1200px) {
+
     .name__wrapper {
         max-width: 1200px;
     }
@@ -172,6 +180,34 @@ footer {
 
     .name__title h3 {
         font-size: 43px;
+    }
+
+    .arrow__forward {
+        left: 89%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .name__container {
+        margin-top: 60px;
+    }
+
+    .name__wrapper {
+        max-width: 992px;
+    }
+
+    .name__title h2 {
+        font-size: 50px;
+    }
+
+    .name__title h3 {
+        font-size: 34px;
+        margin-top: 0px;
+    }
+
+    .arrow__forward {
+        left: 87%;
     }
 }
 
@@ -246,6 +282,35 @@ footer {
 
 }
 
+@media (max-width: 992px) {
+
+    .about-me__wrapper {
+        max-width: 992px;
+    }
+
+    .about-me__container {
+        margin-top: 100px;
+    }
+
+    .about-me__block {
+        padding: 15px 50px 15px 50px;
+    }
+
+    .about-me__block h2 {
+        font-size: 40px;
+    }
+
+    .about-me__block p {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .about-me__block p:nth-child(2) {
+        margin-top: 15px;
+    }
+
+}
+
 /* Styles for SKILLS */
 
 .skills__wrapper {
@@ -313,6 +378,40 @@ footer {
 
     .skills__block p {
         font-size: 37px;
+    }
+
+    .skills__items img {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .skills__wrapper {
+        max-width: 992px;
+    }
+
+    .skills__container {
+        margin-top: 100px;
+    }
+
+    .skills__block h2 {
+        font-size: 40px;
+    }
+
+    .skills__block p {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .skills__items {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .skills__items img {
+        width: 75%;
     }
 
 }
@@ -423,6 +522,10 @@ footer {
         font-size: 37px;
     }
 
+    .education__block.first-block .date {
+        margin-top: 0;
+    }
+
     .education__info span {
         font-size: 25px;
         line-height: 35px;
@@ -431,6 +534,59 @@ footer {
     .new_info {
         margin-top: 15px;
         padding-top: 15px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .education__wrapper {
+        max-width: 992px;
+    }
+
+    .education__container {
+        margin-top: 100px;
+    }
+
+    .education__title h2 {
+        font-size: 40px;
+    }
+
+    .education__block {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .education__info {
+        margin-top: 15px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .education__info p {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .date {
+        width: 70px;
+        font-size: 25px;
+        padding: 7px 5px;
+    }
+
+    .education__block.second-block .date {
+        margin-top: -15px;
+    }
+
+    .education__info span {
+        font-size: 15px;
+        line-height: 16px;
+        margin-top: 5px;
+    }
+
+    .new_info {
+        margin-top: 5px;
+        padding-top: 5px;
     }
 
 }
@@ -516,6 +672,37 @@ footer {
 
 }
 
+@media (max-width: 992px) {
+
+    .languages__wrapper {
+        max-width: 992px;
+    }
+
+    .languages__container {
+        margin-top: 100px;
+    }
+
+    .languages__block h2 {
+        font-size: 40px;
+    }
+
+    .languages__items {
+        margin-top: 15px;
+        width: 70%;
+    }
+
+    .languages__items p {
+        font-size: 25px;
+    }
+
+    .languages__items p:nth-child(2) {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 4px;
+    }
+
+}
+
 /* Styles for position */
 
 .position__wrapper {
@@ -560,7 +747,7 @@ footer {
 }
 
 .position__blocks {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -621,6 +808,46 @@ footer {
 
 }
 
+@media (max-width: 992px) {
+
+    .position__wrapper {
+        max-width: 992px;
+    }
+
+    .position__container {
+        margin-top: 100px;
+    }
+
+    .position__title {
+        padding-bottom: 11px;
+    }
+
+    .position__title h2 {
+        font-size: 40px;
+    }
+
+    .position__title p {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .position__blocks {
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    .position__blocks p:nth-child(1) {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .position__blocks p:nth-child(2) {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+}
+
 /* Styles for footer */
 
 .footer__wrapper {
@@ -663,4 +890,28 @@ footer {
 
 .footer__item a:hover {
     color: green;
+}
+
+@media (max-width: 992px) {
+
+    .footer__container {
+        margin-top: 100px;
+        padding: 26px 40px;
+    }
+
+    .footer__item a {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .footer__link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .github {
+        width: 40px;
+        height: 40px;
+    }
+
 }
