@@ -38,7 +38,7 @@ footer {
     line-height: 25px;
 }
 
-.navigation {
+.navigation__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,6 +57,26 @@ footer {
 
 .navigation__item a:hover {
     color: green;
+}
+
+.hamb {
+    display: none;
+}
+
+.hamb__field {
+    display: flex;
+    cursor: pointer;
+    padding: 5px 5px 5px 10px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hamb__bar {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #F5EFD7;
+    border-radius: 2px;
 }
 
 @media (max-width: 1200px) {
@@ -81,8 +101,23 @@ footer {
         padding: 23px 23px;
     }
 
-    .navigation {
+    .navigation__menu {
         gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header__container {
+        padding: 23px 84px;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
     }
 }
 
@@ -211,6 +246,33 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+
+    .name__wrapper {
+        max-width: 768px;
+    }
+
+    .name__container {
+        margin-top: 35px;
+    }
+
+    .name__title h2 {
+        font-size: 50px;
+    }
+
+    .name__title h3 {
+        font-size: 34px;
+    }
+
+    .slider__wrapper {
+        margin-top: 10px;
+    }
+
+    .arrow__forward {
+        left: 87%;
+    }
+}
+
 
 
 /* Styles for ABOUT-ME */
@@ -311,6 +373,31 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+
+    .about-me__wrapper {
+        max-width: 768px;
+    }
+
+    .about-me__container {
+        margin-top: 80px;
+    }
+
+    .about-me__block {
+        padding: 15px 50px 15px 50px;
+    }
+
+    .about-me__block h2 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    .about-me__block p:nth-child(2) {
+        margin-top: 20px;
+    }
+
+}
+
 /* Styles for SKILLS */
 
 .skills__wrapper {
@@ -367,6 +454,10 @@ footer {
     width: 100%;
 }
 
+.skills__item {
+    text-align: center;
+}
+
 @media (max-width: 1200px) {
     .skills__wrapper {
         max-width: 1200px;
@@ -412,6 +503,38 @@ footer {
 
     .skills__items img {
         width: 75%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .skills__wrapper {
+        max-width: 768px;
+    }
+
+    .skills__container {
+        margin-top: 80px;
+    }
+
+    .skills__block h2 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    .skills__block p {
+        font-size: 25px;
+        line-height: 27px;
+        margin-top: 20px;
+    }
+
+    .skills__items {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .skills__items img {
+        width: 60%;
     }
 
 }
@@ -474,13 +597,32 @@ footer {
 
 .education__info {
     margin-top: 22px;
-    display: flex;
-    flex-direction: column;
     color: #1C293D;
 }
 
-.education__info.second-block {
-    justify-content: right;
+.education__block.first-block p:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.education__block.second-block p:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.education__block.first-block {
+    align-items: flex-start;
+}
+
+.education__block.second-block {
+    align-items: flex-end;
+}
+
+.education__block.first-block .education__info {
+    text-align: left;
+}
+
+.education__block.second-block .education__info {
+    text-align: right;
 }
 
 .education__info p {
@@ -522,8 +664,37 @@ footer {
         font-size: 37px;
     }
 
+    .education__block.second-block {
+        align-items: flex-end;
+    }
+
+    .education__block.first-block {
+        text-align: left;
+    }
+
+    .education__block.second-block {
+        text-align: right;
+    }
+
+    .education__block.first-block .education__info {
+        text-align: left;
+    }
+
+    .education__block.second-block .education__info {
+        text-align: right;
+    }
+
     .education__block.first-block .date {
         margin-top: 0;
+    }
+
+    .education__block.first-block p:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .education__block.second-block p:nth-child(1) {
+        margin-bottom: 10px;
     }
 
     .education__info span {
@@ -552,15 +723,32 @@ footer {
         font-size: 40px;
     }
 
-    .education__block {
+    .education__block.first-block {
         align-items: center;
-        justify-content: center;
+    }
+
+    .education__block.second-block {
+        align-items: center;
+    }
+
+    .education__block.first-block {
+        text-align: center;
+    }
+
+    .education__block.second-block {
+        text-align: center;
+    }
+
+    .education__block.first-block .education__info {
+        text-align: center;
+    }
+
+    .education__block.second-block .education__info {
+        text-align: center;
     }
 
     .education__info {
         margin-top: 15px;
-        /* align-items: center;
-        justify-content: center; */
     }
 
     .education__info p {
@@ -578,6 +766,15 @@ footer {
         margin-top: -15px;
     }
 
+    .education__block.first-block p:nth-child(2) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .education__block.second-block p:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
     .education__info span {
         font-size: 15px;
         line-height: 16px;
@@ -585,8 +782,89 @@ footer {
     }
 
     .new_info {
+        text-align: center;
         margin-top: 5px;
         padding-top: 5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .education__wrapper {
+        max-width: 768px;
+    }
+
+    .education__container {
+        margin-top: 80px;
+    }
+
+    .education__title h2 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    .education__blocks {
+        margin-top: 15px;
+    }
+
+    .education__block.first-block {
+        align-items: flex-start;
+    }
+
+    .education__block.second-block {
+        align-items: flex-end;
+    }
+
+    .education__block.first-block .education__info {
+        text-align: left;
+    }
+
+    .education__block.second-block .education__info {
+        text-align: right;
+    }
+
+    .education__info {
+        margin-top: 15px;
+    }
+
+    .education__info p {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .date {
+        width: 70px;
+        font-size: 25px;
+        padding: 7px 5px;
+    }
+
+    .education__block.first-block .date {
+        margin-top: -15px;
+    }
+
+    .education__block.second-block .date {
+        margin-top: 0px;
+    }
+
+    .education__block.first-block p:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .education__block.second-block p:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .education__info span {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .new_info {
+        text-align: right;
+        margin-top: 21px;
+        padding-top: 21px;
     }
 
 }
@@ -699,6 +977,32 @@ footer {
         font-size: 15px;
         line-height: 20px;
         margin-top: 4px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .languages__wrapper {
+        max-width: 768px;
+    }
+
+    .languages__container {
+        margin-top: 80px;
+    }
+
+    .languages__block h2 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    .languages__items {
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    .languages__items p:nth-child(2) {
+        margin-top: 5px;
     }
 
 }
@@ -848,6 +1152,45 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+
+    .position__wrapper {
+        max-width: 768px;
+    }
+
+    .position__container {
+        margin-top: 80px;
+    }
+
+    .position__title {
+        padding-bottom: 11px;
+    }
+
+    .position__title h2 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    .position__title p {
+        font-size: 25px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .position__block {
+        text-align: center;
+    }
+
+    .position__blocks {
+        margin-top: 20px;
+        width: 80%;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
 /* Styles for footer */
 
 .footer__wrapper {
@@ -912,6 +1255,29 @@ footer {
     .github {
         width: 40px;
         height: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer__container {
+        margin-top: 80px;
+        padding: 26px 40px;
+    }
+
+    .footer__item a {
+        font-size: 12px;
+    }
+
+    .footer__link {
+        width: 20px;
+        height: 20px;
+    }
+
+    .github {
+        width: 30px;
+        height: 30px;
     }
 
 }
